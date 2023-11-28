@@ -737,6 +737,9 @@ footer {
   .instructor-grid {
     grid-template-columns: repeat(1, minmax(300px, 1fr));
   }
+  .footer-grid {
+    grid-template-columns: repeat(1, minmax(300px, 1fr));
+  }
 }
 
 @media (min-width: 601px) and (max-width: 1024px) {
@@ -747,6 +750,9 @@ footer {
     flex-direction: column;
   }
   .instructor-grid {
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
+  }
+  .footer-grid {
     grid-template-columns: repeat(2, minmax(300px, 1fr));
   }
 }
