@@ -21,23 +21,30 @@
   <body>
     <section class="header">
       <nav>
-        <a class="logo" href="index.html">
-          <img src="https://i.ibb.co/nQSFX0R/Tech-Vantage.png" alt="" />
-          <p>Tech Vantage</p>
-        </a>
-        <div class="nav-links" id="navLinks">
-          <i class="fa fa-times" onclick="hideMenu()"></i>
-          <ul>
-            <li><a class="active" href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="course.html">Internship Domains</a></li>
-            <li><a href="blog.html">Roadmap</a></li>
-            <li><a href="contract.html">Speakers</a></li>
-            <li><a href="contract.html">Training and programs</a></li>
-            <li><a href="contract.html">Contact</a></li>
-          </ul>
+        <div class="nav_left">
+          <a class="logo" href="index.html">
+            <img src="https://i.ibb.co/nQSFX0R/Tech-Vantage.png" alt="" />
+            <p>Tech Vantage</p>
+          </a>
         </div>
-        <i class="fa fa-bars" onclick="showMenu()"></i>
+        <div class="nav_right">
+          <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+              <li><a class="active">Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Internship Domains</a></li>
+              <li><a>Roadmap</a></li>
+              <li><a>Speakers</a></li>
+              <li><a>Training and programs</a></li>
+              <li><a>Contact</a></li>
+            </ul>
+          </div>
+          <div class="nav_buttons">
+            <button class="hero-btn">Login</button>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+          </div>
+        </div>
       </nav>
 
       <div class="text-box">
