@@ -366,6 +366,8 @@
       <p>Made with <i class="fa-solid fa-heart"></i> By Shakil Hossain</p>
     </section>
 
+    <button id="scrollToTopBtn"><i class="fa-solid fa-arrow-up"></i></button>
+
     <!-- JavaScript for Toggle Menu -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script>
@@ -452,6 +454,32 @@
           clearInterval(support);
         }
       }
+
+      // scroll to top functionalities
+      // Get the button
+      var scrollToTopButton = document.getElementById("scrollToTopBtn");
+
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          scrollToTopButton.style.display = "block";
+        } else {
+          scrollToTopButton.style.display = "none";
+        }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      scrollToTopButton.addEventListener("click", function () {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+      });
     </script>
   </body>
 </html>
