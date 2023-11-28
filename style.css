@@ -21,11 +21,10 @@ nav {
   justify-content: space-between;
 }
 
-
-.logo{
+.logo {
   display: flex;
   align-items: center;
-  color: #22CFB8;
+  color: #22cfb8;
   gap: 5px;
   text-decoration: none;
 }
@@ -34,7 +33,7 @@ nav {
   width: 70px;
 }
 
-.logo p{
+.logo p {
   font-size: 20px;
   font-weight: bold;
 }
@@ -55,14 +54,14 @@ nav {
   text-decoration: none;
   color: white;
   font-size: 17px;
-  font-family:  serif;
+  font-family: serif;
 }
 
 .nav-links ul li::after {
   content: "";
   width: 0%;
   height: 2px;
-  background: #22CFB8;
+  background: #22cfb8;
   display: block;
   margin: auto;
   transition: 1s;
@@ -72,23 +71,23 @@ nav {
   width: 100%;
 }
 
-.nav-links ul li:hover a{
-  color: #22CFB8;
+.nav-links ul li:hover a {
+  color: #22cfb8;
 }
 
-.nav_right{
+.nav_right {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.nav_buttons{
+.nav_buttons {
   display: flex;
   gap: 5px;
 }
 
-.active{
-  color: #22CFB8 !important;
+.active {
+  color: #22cfb8 !important;
 }
 
 .text-box {
@@ -127,8 +126,8 @@ nav {
 }
 
 .hero-btn:hover {
-  border: 1px solid #22CFB8;
-  background: #22CFB8;
+  border: 1px solid #22cfb8;
+  background: #22cfb8;
   color: white;
   border-radius: 10px;
 }
@@ -149,7 +148,7 @@ nav .fa {
   }
   .nav-links {
     position: fixed;
-    background: #22CFB8;
+    background: #22cfb8;
     height: 100vh;
     width: 200px;
     top: 0;
@@ -184,13 +183,6 @@ nav .fa {
     cursor: pointer;
     transition: 1s;
   }
-
-}
-
-/* change navbar styles on scroll using javascript */
-
-.window-scroll {
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
 }
 
 /* ----- Start of Faq ---------- */
@@ -199,12 +191,12 @@ nav .fa {
   margin: 4rem 3rem;
 }
 
-.faqs > h2{
+.header_title {
   text-align: center;
   margin-bottom: 2rem;
   font-size: 2.5rem;
   font-weight: bold;
-  color: #22CFB8;
+  color: #22cfb8;
 }
 
 .container_faq {
@@ -216,14 +208,14 @@ nav .fa {
 .faq {
   display: flex;
   align-items: end;
-  background: #22CFB8;
+  background: #22cfb8;
   padding: 2rem;
   gap: 1rem;
   color: #fff;
   height: fit-content;
   cursor: pointer;
   border-radius: 15px;
-  box-shadow: 0 0 10px 0 rgba(0,0,0,0.45) inset;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.45) inset;
 }
 
 .faq h4 {
@@ -247,13 +239,15 @@ nav .fa {
 /* start of testimonial */
 
 .testimonial_container {
-  overflow-x: hidden;
-  position: relative;
-  margin-bottom: 5rem;
+  overflow-x: hidden !important;
+  position: relative !important;
+  margin: 5rem 5rem;
+  padding: 0rem 1.5rem !important;
 }
 
-.testimonial {
-  padding-top: 2rem;
+.swiper-wrapper{
+  position: relative;
+  top: -15px;
 }
 
 .avatar {
@@ -270,7 +264,7 @@ nav .fa {
 }
 
 .testimonial_body {
-  background: var(--color-primary);
+  background: #22cfb8;
   padding: 2rem;
   margin-top: 3rem;
   position: relative;
@@ -281,13 +275,7 @@ nav .fa {
   position: absolute;
   height: 3rem;
   width: 3rem;
-  background: linear-gradient(
-    135deg,
-    transparent,
-    var(--color-primary),
-    var(--color-primary),
-    var(--color-primary)
-  );
+  background: linear-gradient(135deg, transparent, #22cfb8, #22cfb8, #22cfb8);
   left: 50%;
   top: -1.5rem;
   transform: rotate(45deg);
@@ -295,147 +283,7 @@ nav .fa {
 
 .testimonial_container .swiper-pagination {
   position: relative;
-  top: 6px;
-}
-
-/* Campus */
-
-.campus {
-  width: 80%;
-  margin: auto;
-  padding-top: 50px;
-  margin-top: -8rem;
-  text-align: center;
-}
-
-.campus-col {
-  flex-basis: 32%;
-  border-radius: 10px;
-  margin-bottom: 30px;
-  position: relative;
-  overflow: hidden;
-}
-
-.campus-col img {
-  width: 100%;
-  display: block;
-}
-
-.layer {
-  background: transparent;
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  transition: 0.5s;
-  display: flex;
-  flex-direction: row;
-}
-
-.layer:hover {
-  background: rgba(226, 0, 0, 0.7);
-}
-
-.layer h3 {
-  width: 100%;
-  font-size: 26px;
-  color: #fff;
-  font-weight: 500;
-  left: 50%;
-  bottom: 0;
-  transform: translateX(-50%);
-  position: absolute;
-  opacity: 0;
-  transition: 0.5s;
-}
-
-.layer:hover h3 {
-  bottom: 49%;
-  opacity: 1;
-}
-/*-------------- facilities -------------- */
-
-.facilities {
-  width: 80%;
-  margin: auto;
-  text-align: center;
-  padding-top: 10px;
-}
-
-.facilities h1 {
-  font-family: Bree Serif;
-  font-size: 40px;
-}
-
-.facilities p {
-  font-size: 18px;
-}
-
-.facilities-col {
-  flex-basis: 31%;
-  border-radius: 12px;
-  margin-bottom: 5%;
-  text-align: left;
-}
-
-.facilities-col img {
-  width: 100%;
-  border-radius: 10px;
-}
-
-.facilities-col p {
-  padding: 0;
-}
-
-.facilities-col h3 {
-  margin-bottom: 16px;
-  margin-top: 15px;
-  text-align: left;
-  font-weight: bold;
-  font-family: Josefin;
-  font-size: 22px;
-}
-
-.testimonials {
-  margin: auto;
-  padding-top: 100px;
-  text-align: center;
-  width: 80%;
-}
-
-.testimonials-col {
-  flex-basis: 44%;
-  border-radius: 10px;
-  margin-bottom: 5%;
-  text-align: left;
-  background: #efb4b4;
-  padding: 25px;
-  cursor: pointer;
-  display: flex;
-}
-
-.testimonials-col img {
-  height: 40px;
-  margin-left: 5px;
-  margin-right: 30px;
-  border-radius: 50%;
-}
-
-.testimonials-col p {
-  padding: 0;
-}
-
-.testimonials-col h3 {
-  margin-top: 15px;
-  text-align: left;
-  font-weight: bold;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-}
-
-.testimonials-col .fa {
-  color: #f44338;
+  top: 0px;
 }
 
 @media (max-width: 700px) {
@@ -494,7 +342,7 @@ nav .fa {
 }
 
 .fa-heart {
-  color: #22CFB8;
+  color: #22cfb8;
 }
 /*------------------ About us page ------------------*/
 
@@ -539,9 +387,9 @@ nav .fa {
 }
 
 .red-btn {
-  border: 1px solid #22CFB8;
+  border: 1px solid #22cfb8;
   background: transparent;
-  color: #22CFB8;
+  color: #22cfb8;
 }
 /* blog-content */
 
@@ -576,7 +424,7 @@ nav .fa {
 }
 
 .blog-right h3 {
-  background: #22CFB8;
+  background: #22cfb8;
   color: #fff;
   padding: 7px 0;
   font-size: 17px;
@@ -666,7 +514,7 @@ nav .fa {
 
 .contact-col div .fa-solid {
   font-size: 28px;
-  color: #22CFB8;
+  color: #22cfb8;
   margin: 10px;
   margin-right: 30px;
 }
