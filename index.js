@@ -1,50 +1,109 @@
-// Change navbar styles on scroll
+var navLinks = document.getElementById("navLinks");
 
-window.addEventListener("scroll", () => {
-  document
-    .querySelector("nav")
-    .classList.toggle("window-scroll", window.scrollY > 0);
-});
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
 
-// show/hide faq answer
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+      console.log(document.body.childNodes);
 
-const faqs = document.querySelectorAll(".faq");
-faqs.forEach((faq) => {
-  faq.addEventListener("click", () => {
-    faq.classList.toggle("open");
-    // Change icon
-    const icon = faq.querySelector(".fa_icon i");
-    if (icon.className === "fa-solid fa-plus") {
-      icon.className = "fa-solid fa-minus";
-    } else {
-      icon.className = "fa-solid fa-plus";
-    }
-  });
-});
+      // show/hide faq answer
 
-// show/hide nav menu
+      const faqs = document.querySelectorAll(".faq");
+      faqs.forEach((faq) => {
+        faq.addEventListener("click", () => {
+          faq.classList.toggle("open");
+          // Change icon
+          const icon = faq.querySelector(".fa_icon i");
+          if (icon.className === "fa-solid fa-plus") {
+            icon.className = "fa-solid fa-minus";
+          } else {
+            icon.className = "fa-solid fa-plus";
+          }
+        });
+      });
 
-const menu = document.querySelector(".nav-menu");
-const menuBtn = document.querySelector("#open-menu-btn");
-const closeBtn = document.querySelector("#close-menu-btn");
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        //when window width is >=600
+        breakpoints: {
+          600: {
+            slidesPerView: 2,
+          },
+        },
+      });
 
-menuBtn.addEventListener("click", () => {
-  menu.style.display = "flex";
-  closeBtn.style.display = "inline-block";
-  menuBtn.style.display = "none";
-});
+      // our success story couters
+      var clients = setInterval(happyClients, 10);
+      var trainer = setInterval(Trainers, 10);
+      var interns = setInterval(abroadInters, 10);
+      var support = setInterval(hoursOfSupport, 10);
+      let count1 = 1;
+      let count2 = 1;
+      let count3 = 1;
+      let count4 = 1;
 
-// close nav menu
+      function Trainers() {
+        count1++;
+        document.querySelector("#number1").innerHTML = count1;
+        if (count1 == 1100) {
+          clearInterval(trainer);
+        }
+      }
 
-const closeNav = () => {
-  menu.style.display = "none";
-  closeBtn.style.display = "none";
-  menuBtn.style.display = "inline-block";
-};
+      function happyClients() {
+        count2++;
+        document.querySelector("#number2").innerHTML = count2;
+        if (count2 == 89) {
+          clearInterval(clients);
+        }
+      }
 
-closeBtn.addEventListener("click", closeNav);
+      function abroadInters() {
+        count3++;
+        document.querySelector("#number3").innerHTML = count3;
+        if (count3 == 400) {
+          clearInterval(interns);
+        }
+      }
 
-{/* <div class="icon">😊</div>
-<div class="icon">👥</div>
-<div class="icon">🌍</div>
-<div class="icon">⏰</div> */}
+      function hoursOfSupport() {
+        count4++;
+        document.querySelector("#number4").innerHTML = count4;
+        if (count4 == 24) {
+          clearInterval(support);
+        }
+      }
+
+      // scroll to top functionalities
+      // Get the button
+      var scrollToTopButton = document.getElementById("scrollToTopBtn");
+
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          scrollToTopButton.style.display = "block";
+        } else {
+          scrollToTopButton.style.display = "none";
+        }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      scrollToTopButton.addEventListener("click", function () {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+      });
