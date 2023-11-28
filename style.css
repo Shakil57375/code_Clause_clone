@@ -14,7 +14,6 @@
   --lavender-blue: hsl(229, 96%, 91%);
   --oxford-blue: hsl(229, 84%, 12%);
   --light-gray: hsl(0, 0%, 80%);
-  --cultured: hsl(228, 26%, 96%);
   --white: hsl(0, 0%, 100%);
 
   /**
@@ -479,8 +478,9 @@ nav .fa {
 .testimonial_body {
   background: #22cfb8;
   padding: 2rem;
-  margin-top: 3rem;
+  margin : 80px;
   position: relative;
+  border-radius: 12px;
 }
 
 .testimonial_body::before {
@@ -499,6 +499,65 @@ nav .fa {
   top: 0px;
 }
 
+/* contact */
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px;
+}
+
+.contact-left {
+  flex-basis: 30%;
+  margin-left: 100px;
+}
+
+.contact-left p {
+  margin-top: 30px;
+}
+
+.contact-left .sub-title{
+  text-align: start;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #22cfb8;
+}
+
+.contact-left p i {
+  color: var(--ultramarine-blue);
+  margin-right: 15px;
+  font-size: 25px;
+}
+
+.contact-right {
+  flex-basis: 60%;
+}
+
+
+.contact-right form {
+  width: 90%;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 15px 0;
+  color: var(--oxford-blue);
+  font-size: 18px;
+  border: 1px solid var(--ultramarine-blue);
+  border-radius: 6px;
+}
+
+
+.buttons {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+/* footer */
 footer {
   background: var(--oxford-blue);
 }
@@ -507,7 +566,7 @@ footer {
   display: grid;
   grid-template-columns: repeat(4, minmax(300px, 1fr));
   align-items: stretch;
-  justify-items: center;
+  justify-items: start;
   justify-content: space-between;
   gap: 15px;
   padding: 2% 6%;
@@ -612,7 +671,7 @@ footer {
   transition: var(--default-transition);
 }
 
-.grid-item .send-btn i{
+.grid-item .send-btn i {
   font-size: 25px;
   color: var(--oxford-blue);
 }
@@ -666,10 +725,10 @@ footer {
 
 @keyframes popUpDown {
   0% {
-      transform: translateY(0);
+    transform: translateY(0);
   }
   100% {
-      transform: translateY(-10px);
+    transform: translateY(-10px);
   }
 }
 
@@ -740,6 +799,20 @@ footer {
   .footer-grid {
     grid-template-columns: repeat(1, minmax(300px, 1fr));
   }
+  .row{
+    flex-direction: column;
+    margin: 0 10px;
+  }
+  .contact-left{
+    flex-basis: 100%;
+    margin-left: 0px;
+  }
+  .contact-right{
+    flex-basis: 100%;
+  }
+  .contact-right form {
+    width: 90%;
+  }  
 }
 
 @media (min-width: 601px) and (max-width: 1024px) {
@@ -755,4 +828,24 @@ footer {
   .footer-grid {
     grid-template-columns: repeat(2, minmax(300px, 1fr));
   }
+}
+
+.footer-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--ultramarine-blue);
+  border: 1px solid var(--ultramarine-blue);
+  padding: 12px 18px;
+  font-size: 16px;
+  background: transparent;
+  position: relative;
+  font-weight: 500;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: var(--default-transition);
+}
+
+.footer-btn:hover {
+  background-color: var(--ultramarine-blue);
+  color: var(--white);
 }
