@@ -19,13 +19,12 @@ In the meantime, I completed the entire website within 24 hours. However, I was 
 
 ## additional features
 
-    --You guys give me task to implement 
-    * Header: Responsive navigation, logo, search bar.
-    * Hero: Visually appealing with a background image or video, heading, subheading, and CTA button.
-    * Features: Highlight key features with icons and descriptions.
-    * Testimonials: Include three testimonials with names and profile pictures.
-    * Footer: Links to About Us, Contact, Terms, and social media icons.
+    -- I was given a task to implement the following components for a website:
+        + A responsive navigation bar with a logo
+        + A visually appealing hero section with a background image or video, heading, subheading, and call-to-action button
+        + A features section to highlight key features with icons and descriptions
+        + A testimonials section that includes three testimonials with names and profile pictures
+        + A footer section with links to About Us, Contact, Terms, and social media icons.
 
-    -- I have added 
-    * Instructor section with image and social media links
-    * Contract us section
+    -- In addition to the above components
+        + section with an image and social media links, as well as a contact us section.
