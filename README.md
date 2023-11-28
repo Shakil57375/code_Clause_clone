@@ -19,7 +19,7 @@ In the meantime, I completed the entire website within 24 hours. However, I was 
 
 ## additional features
 
-You guys give me task to implement 
+    --You guys give me task to implement 
     * Header: Responsive navigation, logo, search bar.
     * Hero: Visually appealing with a background image or video, heading, subheading, and CTA button.
     * Features: Highlight key features with icons and descriptions.
