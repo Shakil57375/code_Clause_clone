@@ -43,3 +43,8 @@ const closeNav = () => {
 };
 
 closeBtn.addEventListener("click", closeNav);
+
+{/* <div class="icon">😊</div>
+<div class="icon">👥</div>
+<div class="icon">🌍</div>
+<div class="icon">⏰</div> */}

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>University web site</title>
+    <title>Tech Vantage</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="font.css" />
     <link
@@ -56,6 +56,30 @@
         <a class="hero-btn" href="#">Apply Now</a>
       </div>
     </section>
+    <!-- our success story starts -->
+    <div class="project-counter-wrp">
+      <div class="project-counter-wrp-body">
+        <p id="number1" class="number">11500</p>
+        <i class="fa-solid fa-face-smile"></i>
+        <p>Happy Clients</p>
+      </div>
+      <div class="project-counter-wrp-body">
+        <p id="number2" class="number">89</p>
+        <i class="fa-solid fa-chalkboard-user"></i>
+        <p>Trainers</p>
+      </div>
+      <div class="project-counter-wrp-body">
+        <p id="number3" class="number">400</p>
+        <i class="fa-solid fa-user-group"></i>
+        <p>Abroad Interns</p>
+      </div>
+      <div class="project-counter-wrp-body">
+        <p id="number4" class="number">24</p>
+        <i class="fa-solid fa-headset"></i>
+        <p>Hours of Support</p>
+      </div>
+    </div>
+    <!-- our success story ends -->
 
     <!----------------- Start of FAQ ------------->
 
@@ -190,7 +214,7 @@
     <!------------------ Start of testimonial ------------------->
 
     <section class="container testimonial_container swiper mySwiper">
-      <h2 class="header_title">Students' Testimonials</h2>
+      <h2 class="header_title">What They Say?</h2>
       <div class="swiper-wrapper">
         <article class="testimonial swiper-slide">
           <div class="avatar">
@@ -386,6 +410,48 @@
           },
         },
       });
+
+      // our success story couters
+      var clients = setInterval(happyClients, 10);
+      var trainer = setInterval(Trainers, 10);
+      var interns = setInterval(abroadInters, 10);
+      var support = setInterval(hoursOfSupport, 10);
+      let count1 = 1;
+      let count2 = 1;
+      let count3 = 1;
+      let count4 = 1;
+
+      function Trainers() {
+        count1++;
+        document.querySelector("#number1").innerHTML = count1;
+        if (count1 == 1100) {
+          clearInterval(trainer);
+        }
+      }
+
+      function happyClients() {
+        count2++;
+        document.querySelector("#number2").innerHTML = count2;
+        if (count2 == 89) {
+          clearInterval(clients);
+        }
+      }
+
+      function abroadInters() {
+        count3++;
+        document.querySelector("#number3").innerHTML = count3;
+        if (count3 == 400) {
+          clearInterval(interns);
+        }
+      }
+
+      function hoursOfSupport() {
+        count4++;
+        document.querySelector("#number4").innerHTML = count4;
+        if (count4 == 24) {
+          clearInterval(support);
+        }
+      }
     </script>
   </body>
 </html>

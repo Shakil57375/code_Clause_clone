@@ -185,10 +185,71 @@ nav .fa {
   }
 }
 
+/* our success story starts */
+
+.project-counter-wrp {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(170px, 1fr));
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 2% 6%;
+  margin-top: 3rem;
+}
+
+.project-counter-wrp-body {
+  background-color: #0093e9;
+  background: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+  padding: 16px 26px;
+  color: white;
+  display: flex;
+  width: 200px;
+  height: 150px;
+  flex-direction: column;
+  align-items: center;
+  transition: 0.3s ease-in-out;
+  border-radius: 20px;
+}
+
+.project-counter-wrp-body:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  transform: translateY(-10px);
+  transform: translateX(-10px);
+}
+
+.project-counter-wrp-body .number {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.project-counter-wrp-body i {
+  font-size: 35px;
+  margin: 20px 0px;
+}
+
+.project-counter-wrp-body p {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+@media (max-width: 600px) {
+  .project-counter-wrp {
+    grid-template-columns: repeat(1, minmax(170px, 1fr));
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  .project-counter-wrp {
+    grid-template-columns: repeat(2, minmax(170px, 1fr));
+  }
+}
+
+/* our success story ends */
+
 /* ----- Start of Faq ---------- */
 
 .faqs {
-  margin: 4rem 3rem;
+  padding: 2% 6%;
 }
 
 .header_title {
@@ -208,7 +269,7 @@ nav .fa {
 .faq {
   display: flex;
   align-items: end;
-  background: #22cfb8;
+  background: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
   padding: 2rem;
   gap: 1rem;
   color: #fff;
@@ -245,7 +306,7 @@ nav .fa {
   padding: 0rem 1.5rem !important;
 }
 
-.swiper-wrapper{
+.swiper-wrapper {
   position: relative;
   top: -15px;
 }
